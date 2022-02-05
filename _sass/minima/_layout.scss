@@ -108,7 +108,13 @@
 .site-footer {
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
-  background: linear-gradient(180deg, #9c9c9c, #dddddd);
+  background-color: darkgray;
+  // background: linear-gradient(180deg, rgb(191, 191, 191), rgb(99, 99, 99));
+  background-image: url("../images/bkg01.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: difference;
+
 }
 
 .footer-heading {
