@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/override.css">
   {%- include head.html -%}
 
   <body>
@@ -15,6 +15,12 @@
 
     {%- include footer.html -%}
 
+    <div class="modal-container">
+      <button type="button" class="close" onclick="closeModal();">x</button>
+     <div class="modal">
+     </div>
+    </div>
+    <script src="{{ site.baseurl }}/assets/js/main.js"></script>
   </body>
 
 </html>

@@ -17,7 +17,7 @@ Read how it works <a href="/howto">here</a>
 
 And download firmware updates from the Post in the <a href="../">main page</a>
 
-![image-title-here](/images/tenz.png){:class="img-round img-w50"}
+![image-title-here]({{site.baseurl}}/images/tenz.png){:class="img-round img-w50"}
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 Martino B. (Tenz)

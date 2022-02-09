@@ -5,7 +5,7 @@
 layout: home
 ---
 
-![image-title-here](/images/tzi.png){:class="img-round img-w50"}
+![image-title-here]({{site.baseurl}}/images/tzi.png){:class="img-round img-w50"}
 {: style="color:gray; font-size: 80%; text-align: center;"}
 
 TzInstruments testing homemade instruments to fly better!
