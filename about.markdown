@@ -13,9 +13,9 @@ using Arduino borads.
 
 If you like to test my instruemnts feel free to fill the form <a target="_blank" href="https://forms.gle/roa6yLXMy9nKNotFA">here</a>
 
-Read how it works <a href="/howto/">here</a>
+Read how it works <a href="{{site.baseurl}}/howto">here</a>
 
-And download firmware updates from the Post in the <a href="../">main page</a>
+And download firmware updates from the Post in the <a href="{{site.baseurl}}/">main page</a>
 
 ![image-title-here]({{site.baseurl}}/images/tenz.png){:class="img-round img-w50"}
 {: style="color:gray; font-size: 80%; text-align: center;"}
