@@ -27,9 +27,9 @@ baseurl: "/TzInstruments" # the subpath of your site, e.g. /blog
 url: "https://martenz.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  martenz
-instagram_username: tenzmar
-youtube_username: Tenz
-youtube_channel: UC7l2grbLtUJpPGoXAErXLnA
+instagram_username: tzinstruments
+#youtube_username: Tenz
+#youtube_channel: UC7l2grbLtUJpPGoXAErXLnA
 
 # Build settings
 #theme: minima
