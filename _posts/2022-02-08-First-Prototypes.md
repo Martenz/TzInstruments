@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TzI first prototipes pictures"
+title:  "TzI first prototypes pictures"
 date:   2022-02-08 20:00:00 +0100
 categories: jekyll update
 image: ./images/foto/tzi_f003.png
