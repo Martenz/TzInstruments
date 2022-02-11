@@ -1,3 +1,11 @@
+.site-title{
+  display: inline-flex;
+}
+
+.site-title img{
+  margin-right:1rem;
+}
+
 .img-round{
     border-radius:50%;
   }
@@ -42,7 +50,7 @@
 
   .img-post{
     width: 100px;
-    height: auto;
+    height: fit-content;
     display: inline-block;
     margin-right: 1rem;
     border-radius: 50%;
@@ -57,3 +65,17 @@
     height:100%;
     width:auto;
   }
+
+@media screen and (max-width: 600px){
+  .site-nav {
+    top: 0px!important;
+    right: 0px!important;
+    background-color: #fdfdfd!important;
+    border: 5px solid #ffffff!important;
+    border-radius: 0 0 0 15px!important;
+}
+}
+
+.post-link {
+  display: flex!important;
+}
