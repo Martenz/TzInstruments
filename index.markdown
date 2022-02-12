@@ -5,9 +5,11 @@
 layout: home
 ---
 
+TzInstruments testing homemade instruments to fly better!
+{: style="text-align: center;"}
+
 ![image-title-here]({{site.baseurl}}/images/tzi.png){:class="img-round"}
 
-TzInstruments testing homemade instruments to fly better!
 Check this page for new releases and updates.
 {: style="text-align: center;"}
 

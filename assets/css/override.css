@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'MavenPro-Regular'; /*a name to be used later*/
+  src: url('../MavenPro-Regular.ttf'); /*URL to font*/
+}
+
+.site-header{
+  background-color: #83d322;
+  background-image: url("../images/bkg01.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.site-footer{
+  /* background: linear-gradient(180deg, rgb(191, 191, 191), rgb(99, 99, 99)); */
+  background-image: url("../images/bkg01.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: difference;
+}
+
+body{
+  font-family: 'MavenPro-Regular'!important;
+}
+
 .site-title{
   display: inline-flex;
 }
