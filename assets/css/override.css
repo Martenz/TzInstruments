@@ -3,12 +3,23 @@
   src: url('../MavenPro-Regular.ttf'); /*URL to font*/
 }
 
+body{
+  font-family: 'MavenPro-Regular'!important;
+}
+
 .site-header{
   background-color: #83d322;
   background-image: url("../images/bkg01.png");
   background-size: cover;
   background-position: center;
   background-blend-mode: multiply;
+}
+
+kbd {
+  background-color: black;
+  color: white;
+  padding: 0.45rem;
+  border-radius: 0px 0px 10px 10px;
 }
 
 .site-footer{
@@ -19,9 +30,6 @@
   background-blend-mode: difference;
 }
 
-body{
-  font-family: 'MavenPro-Regular'!important;
-}
 
 .site-title{
   display: inline-flex;
@@ -41,7 +49,7 @@ body{
   }
 
   .modal-container{
-      position:absolute;
+      position:fixed;
       top:0;
       left:0;
       width:100%;
@@ -51,13 +59,13 @@ body{
   }
   
   .modal{
-      position: absolute;
-      width: 90%;
-      height: 90%;
-      top: 5%;
-      left: 5%;
-      display: flex;
-      justify-content: center;
+    position: relative;
+    width: 90%;
+    /* height: 100%; */
+    top: 5%;
+    left: 5%;
+    display: flex;
+    justify-content: center;
   }
   
   .close{
@@ -92,12 +100,16 @@ body{
 
 @media screen and (max-width: 600px){
   .site-nav {
-    top: 0px!important;
-    right: 0px!important;
-    background-color: #fdfdfd!important;
-    border: 5px solid #ffffff!important;
-    border-radius: 0 0 0 15px!important;
-}
+    right: -5px!important;
+    background-color: rgba(252, 252, 252, 0)!important;
+    border: 5px solid rgba(255, 255, 255, 0)!important;
+    border-radius: 0%!important;
+    top: 60%!important;}
+
+  .trigger{
+    background-color:#83d322;
+    border-radius: 0px 0px 0px 10px;
+  }
 }
 
 .post-link {

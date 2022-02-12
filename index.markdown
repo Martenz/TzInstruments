@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+list_title: Updates
 ---
 
 TzInstruments testing homemade instruments to fly better!
@@ -13,3 +14,4 @@ TzInstruments testing homemade instruments to fly better!
 Check this page for new releases and updates.
 {: style="text-align: center;"}
 
+<hr>
