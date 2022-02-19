@@ -40,7 +40,7 @@ kbd {
 }
 
 .img-round{
-    border-radius:50%;
+    border-radius:10%;
   }
   
   .img-w50{
@@ -94,7 +94,7 @@ kbd {
   }
 
   .modal .img-thmb{
-    height:100%;
+    height:75vh;
     width:auto;
   }
 

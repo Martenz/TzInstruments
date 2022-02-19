@@ -7,6 +7,9 @@ function closeModal(){
 window.onload = function(){
     // Code. . .
     var modal_c = document.getElementsByClassName("modal-container")[0];
+
+    modal_c.addEventListener('click',closeModal);
+
     var modal = document.getElementsByClassName("modal")[0];
     var close = document.getElementsByClassName("close")[0];
         
