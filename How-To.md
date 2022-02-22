@@ -8,6 +8,7 @@ permalink: /howto/
 
 * <a href="#power-on">Power On</a>
 * <a href="#power-off">Power Off</a>
+* <a href="#battery-management">Battery Management</a>
 * <a href="#pages">Pages</a>
 * <a href="#speaker-volume">Speaker Volume</a>
 * <a href="#wifi-configurator">Wifi Configurator</a>
@@ -29,6 +30,7 @@ Switch on the left side: Up TzI on.
 <hr>
 
 ## Power Off
+
 Switch on the left side: Down TzI off. 
 This switch will shut down completely the device, battery is not connected when off and eink display will freeze the current page.
 
@@ -45,6 +47,16 @@ A proper way to shut down would be
 Sleep Mode can be used to keep the device listening to satellites, when needed press the reset button to start again the instrument or do a switch up and down to restart with gps in hot reset.
 
 <hr>
+
+## Battery Management
+
+I tested the instrument with Lipo 1s batteries 3.7v:
+
+* 1000mA last 4/5 hours
+* 2000mA last 9/10 hours
+
+Charge should be done with 5v charger and low mA input with micro-USB plug. 
+Any USB old charger eg. 500mA input max 1A will work, <u>avoid to use USB fast chargers that can overheat the board</u>.
 
 ## Pages
 
@@ -94,10 +106,10 @@ In all pages on top you will see a Status Bar on top including:
 ## Speaker Volume
 
 Arrow up once: volume +up
-Arrow up 3 seconds: volume max
+<br>Arrow up 3 seconds: volume max
 
 Arrow down once: volume -down
-Arrow down 3 seconds: voleme off
+<br>Arrow down 3 seconds: voleme off
 
 ![image-title-here]({{site.baseurl}}/images/foto/howto/img_04.png){:class="img-round img-thmb"}
 
