@@ -56,7 +56,12 @@ I tested the instrument with Lipo 1s batteries 3.7v:
 * 2000mA last 9/10 hours
 
 Charge should be done with 5v charger and low mA input with micro-USB plug. 
-Any USB old charger eg. 500mA input max 1A will work, <u>avoid to use USB fast chargers that can overheat the board</u>.
+Any USB old charger eg. 500mA ( best option ) max 1A will work, <u>avoid to use USB fast chargers that can overheat the board</u>.
+
+![image-title-here]({{site.baseurl}}/images/foto/howto/img_09.png){:class="img-round img-thmb"}
+
+Full charge with 2000mA battery takes around 3 hours, when fully charged the voltage shoudl be 4.20/4.25 and an F will appear on top of the battery indicator in the status bar.
+Please check also temperature while charging, if you see on display values above 40 C degrees it might be you charger. Domt
 
 ## Pages
 
