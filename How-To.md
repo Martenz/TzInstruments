@@ -118,16 +118,94 @@ Arrow down once: volume -down
 
 ![image-title-here]({{site.baseurl}}/images/foto/howto/img_04.png){:class="img-round img-thmb"}
 
+<hr>
 
 ## Wifi Configurator
-<hr>
-...
+
+All settings for TzI GPS vario are available on the web interface hosted on the device that is acessible enabling WiFi of the device.
+
+Here below the procedure to enable and access the interface, while next paragraphs describes all web interface pages.
+
+#### WiFi ON and web interface
+
+1. To configure TzI GPS Vario go to the third page, there you will see the WiFi status (should be OFF).
+2. Long press on the page button ( O ) to enable WiFi hotspot
+3. an IP ( 192.168.4.1 ) will appear and WiFi status now should be ON
+    ![image-title-here]({{site.baseurl}}/images/foto/howto/img_10.png){:class="img-round img-thmb"}
+4. Connect to the Wifi hotspot on your phone/tablet/PC, search for TzI
+    ![image-title-here]({{site.baseurl}}/images/foto/howto/img_11.png){:class=""}
+5. In your browser visit 192.168.4.1 and the main page of TzI settings will be visible.
+
+![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi01.png){:class=""}
+
 
 #### Wifi Data
-...
+
+This page reports just some data from the device in real-time:
+
+* Device Id	
+* Running time	
+* GPS Time UTC+00	
+* Battery PIN VBAT	
+* Battery %	
+* Speaker Volume (0-255)	
+* Storage	
+* GPS Fix	
+* GPS Satellites	
+* GPS Altitude m	
+* Barometric Altitude m	
+* Temperature °C	
+* Pressure hPa	
 
 #### Wifi Settings
-...
+
+In this page is possible to change several option of the device.
+
+Note that default values are already set and optimized for better performances. If you change these you might experience some different behaviour of the device.
+
+![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi02.png){:class=""}
+
+1. **Pilot name**: name that will be reported in the IGC track log if an SD is present.
+
+2. **UTC offset**: time zone eg. ITA +1, to display correct time on eink display once got a GPS fix
+
+3. **Speaker Volume**: change default speaker volume when device is powered on
+
+4. **Vario Curve**: link to vario curve editor page, see next paragraph
+
+5. **Display Orientation**: set display orientation, display can rotate 90 degrees all around
+
+6. **Display refresh timer**: how oftern force eink refresh to clean ghost effect
+
+7. **Auto display Data page when flying**: when checked the eink will display automatically page 2 (data) when the device detect fly status
+
+8. **Beep only when flying**: if checked the buzzer will beep only when flying with speaker volume defined
+
+9. **LK8EX Bluetooth BLE output**: if checked this will enable LK8EX format for BLE vario output sentence (needed for XCTrack for instance)
+
+10. **Flying Min Speed**: Minimum speed required to detect flying status
+
+11. **Flying Min Time**: Minimum time to detect slying status, this means that if a velocity greater that "Flying Min Speed" is detected for more than this amount of time than the device will be in flying status and start logging.
+
+12. **Flying Stop Time**: Minimum time to detect stand status, i.e. if the velocity is less than "Flying Min Speed" for more than this time the device will stop logging and be set to stand status.
+
+13. **Test Speaker**: just click to test if buzzer works, of course volume should be greater than 0%
+
+14. **Min Satellites number for valid NMEA**: minimum number of satellites available to use, the more satellites the more accuracy in tracking. Optimal value seems to be 5.
+Track logs and gps altitude will be enabled only when you get this minimum number of satellites.
+
+15. **Reinitialize GPS module**: reset of GPS module, click this if you can not get a gps fix even outside. Please notice that first gps fix can take 15/20 minutes.
+
+16. **Change Gps Hz**: GPS module Hz sampling
+
+17. **WiFi Off after**: default wifi timer once enabled. When expired the device will restart as normal with bluetooth enabled and wifi disabled.
+
+18. **Change WiFi Password**: set here wifi interface password, default 12345678. 
+If you change this and you forget the psw 
+you will need to reset to factory the TzI 
+to access again to wifi interface! Keep it in mind :)
+
+19. **Restart TzI**: click this button to force the restart of the device. You might use this if you update the device and the automatic restart will not be performed.
 
 #### Wifi Vario Curve
 ...
@@ -136,4 +214,10 @@ Arrow down once: volume -down
 ...
 
 #### Wifi Update Firmware
-...
+
+In this page you can update the firmware of the device to latest available that you find in this blog (see posts in main page).
+
+![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi03.png){:class=""}
+
+Once downloaded both SPIFFS and FIRMWARE binaries files, upload them separately form the interface. To perform a complete update you will need to upload both.
+SPIFFS file will not force a restart of the device while FIRMWARE after uploaded will restart autmatically the device to apply changes. If not restart manually the device but only once the upload ended (you will see a blank page with a message confirming that upload is finished).
