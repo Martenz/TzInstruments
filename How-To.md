@@ -145,7 +145,7 @@ Here below the procedure to enable and access the interface, while next paragrap
 ![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi01.png){:class=""}
 
 
-#### Wifi Data
+#### Wifi: Data
 
 This page reports just some data from the device in real-time:
 
@@ -163,7 +163,7 @@ This page reports just some data from the device in real-time:
 * Temperature °C	
 * Pressure hPa	
 
-#### Wifi Settings
+#### Wifi: Settings
 
 In this page is possible to change several option of the device.
 
@@ -213,10 +213,10 @@ to access again to wifi interface! Keep it in mind :)
 
 19. **Restart TzI**: click this button to force the restart of the device. You might use this if you update the device and the automatic restart will not be performed.
 
-#### Wifi Vario Curve
+#### Wifi: Vario Curve
 ...
 
-#### Wifi Track Logs
+#### Wifi: Track Logs
 
 In this page, if an SD Card is mounted, you can browse track logs of recorded flights and download them.
 The file format is **.igc** (not verified yet), meaning that you can download and visualize the track with free 
