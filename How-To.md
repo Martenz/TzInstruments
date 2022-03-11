@@ -11,6 +11,7 @@ permalink: /howto/
 * <a href="#battery-management">Battery Management</a>
 * <a href="#pages">Pages</a>
 * <a href="#speaker-volume">Speaker Volume</a>
+* <a href="#sd-card">SD Card</a>
 * <a href="#wifi-configurator">Wifi Configurator</a>
     * <a href="#wifi-data">Data</a>
     * <a href="#wifi-settings">Settings</a>
@@ -120,6 +121,11 @@ Arrow down once: volume -down
 
 <hr>
 
+## SD Card
+
+SD card should be formatted as FAT32 before using it with TzI instruments.
+Insert SD card before switch on the device with pin connectors facing up as shown in the picture on the homepage.
+
 ## Wifi Configurator
 
 All settings for TzI GPS vario are available on the web interface hosted on the device that is acessible enabling WiFi of the device.
@@ -212,6 +218,8 @@ to access again to wifi interface! Keep it in mind :)
 
 #### Wifi Track Logs
 ...
+
+See also <a href="#sd-card">SD Card</a> paragraph.
 
 #### Wifi Update Firmware
 
