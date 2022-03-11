@@ -220,7 +220,7 @@ to access again to wifi interface! Keep it in mind :)
 
 In this page, if an SD Card is mounted, you can browse track logs of recorded flights and download them.
 The file format is **.igc** (not verified yet), meaning that you can download and visualize the track with free 
-igc files viewers like https://e-logbook.org that does not ask for data validation.
+igc files viewers like [e-logbook.org](https://e-logbook.org) that does not ask for data validation.
 
 I'm in the process of validating the IGC files with GPS Dump application, please be patient and finger crossed.
 Will update as soon as possible this documentation when the validation will be ready.
