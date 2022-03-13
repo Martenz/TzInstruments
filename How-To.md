@@ -15,7 +15,7 @@ permalink: /howto/
 * <a href="#wifi-configurator">Wifi Configurator</a>
     * <a href="#wifi-data">Data</a>
     * <a href="#wifi-settings">Settings</a>
-        * <a href="#wifi-vario curve">Vario Curve</a>
+        * <a href="#wifi-vario-curve">Vario Curve</a>
     * <a href="#wifi-track-logs">Track logs</a>
     * <a href="#wifi-update-firmware">Update firmware</a>
 
@@ -126,13 +126,15 @@ Arrow down once: volume -down
 SD card should be formatted as FAT32 before using it with TzI instruments.
 Insert SD card before switch on the device with pin connectors facing up as shown in the picture on the homepage.
 
+<hr>
+
 ## Wifi Configurator
 
 All settings for TzI GPS vario are available on the web interface hosted on the device that is acessible enabling WiFi of the device.
 
 Here below the procedure to enable and access the interface, while next paragraphs describes all web interface pages.
 
-#### WiFi ON and web interface
+### WiFi ON and web interface
 
 1. To configure TzI GPS Vario go to the third page, there you will see the WiFi status (should be OFF).
 2. Long press on the page button ( O ) to enable WiFi hotspot
@@ -145,7 +147,7 @@ Here below the procedure to enable and access the interface, while next paragrap
 ![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi01.png){:class=""}
 
 
-#### Wifi: Data
+### Wifi: Data
 
 This page reports just some data from the device in real-time:
 
@@ -163,7 +165,7 @@ This page reports just some data from the device in real-time:
 * Temperature °C	
 * Pressure hPa	
 
-#### Wifi: Settings
+### Wifi: Settings
 
 In this page is possible to change several option of the device.
 
@@ -213,14 +215,47 @@ to access again to wifi interface! Keep it in mind :)
 
 19. **Restart TzI**: click this button to force the restart of the device. You might use this if you update the device and the automatic restart will not be performed.
 
-#### Wifi: Vario Curve
-...
+### Wifi: Vario Curve
 
-#### Wifi: Track Logs
+In this page you can chage different settings of the vario sound.
+
+The two option at the top define the sink rate value that enables the sound.
+
+Eg. 
+
+Sink Start Beep: -2.5 m/s 
+Lift Start Beep: 0.3 m/s
+
+means that you will not hear the vario until the sink goes lower than -2.5 m/s or higher than 0.3 m/s.
+
+The Vario Curve below allow to edit the sound curve for different variometer values. 
+If you press "Test" button and the TzI volume is higher than 0 you can test directly the sound dragging the vario m/s value input slide bar and/or frequencies/duty/delay inputs.
+
+**"Export Curve"** and **"Import Curve"** buttons allow to export the json configuraiotn of the curve that can be saved to file and shared with other people.
+
+A good practice is to save the original or your favourite curve before editing a new one to be able to restore the default or previous configuration.
+
+
+![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi05.png){:class=""}
+
+#### Kalman parameters
+
+These parameters are used to filter and smooth vario raw data. Default values are the best results I found.
+Please change these if you know what you are doing and if you find a better configuration let me know! thanks!
+
+#### Variometer Averaging ms (milliseconds)
+
+Set here the averaging time for displayed and acoustic response. The higher the value, the smoother and delayed output will be displayed to eink and played to buzzer.
+
+Note: vario data output sent to bluetooth and external instruments such as xctrack will not be affected by this average. i.e. the instrument send only raw data to bluetooth to let external devices to process data (xctrack for instance has already its own averaging algorithm and filters).
+
+### Wifi: Track Logs
 
 In this page, if an SD Card is mounted, you can browse track logs of recorded flights and download them.
 The file format is **.igc** (not verified yet), meaning that you can download and visualize the track with free 
 igc files viewers like [e-logbook.org](https://e-logbook.org) that does not ask for data validation.
+
+![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi04.png){:class=""}
 
 I'm in the process of validating the IGC files with **GPS Dump** application, please be patient and finger crossed.
 Will update as soon as possible this documentation when the validation will be ready.
