@@ -257,10 +257,11 @@ igc files viewers like [e-logbook.org](https://e-logbook.org) that does not ask 
 
 ![image-title-here]({{site.baseurl}}/images/foto/howto/wifi/wifi04.png){:class=""}
 
-I'm in the process of validating the IGC files with **GPS Dump** application, please be patient and finger crossed.
+I'm in the process of asking the validation of the IGC files to **GPS Dump** application, please be patient and finger crossed.
 Will update as soon as possible this documentation when the validation will be ready.
 
 So in future it will be possible to download the IGC file with GPS Dump and export it to other application that requires the validation, such as XContest.
+**A big thank to Stein S. for his time on this!**
 
 For SD Card management:
 See also <a href="#sd-card">SD Card</a> paragraph.
