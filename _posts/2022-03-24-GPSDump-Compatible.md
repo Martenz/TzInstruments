@@ -8,7 +8,7 @@ image: ./images/foto/tzi_f004.png
 
 # GPSDump validation of igc track
 
-Using [https://gpsdump.no](GPS dump) now it is possible to import igc track recorded with TzInstruments and validate them! The option is available in Beta version for now.
+Using [GPS Dump](https://gpsdump.no) now it is possible to import igc track recorded with TzInstruments and validate them! The option is available in Beta version for now.
 Then you can upload your track for instance to XContest!
 
 ![image-title-here]({{site.baseurl}}/images/foto/tzi_f004.png){:class="img-round img-thmb"}
