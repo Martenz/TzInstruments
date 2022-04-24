@@ -15,7 +15,7 @@ Download each file and upload it from the Wifi web interface.
 <a href="{{site.baseurl}}/howto#wifi-update-firmware"> 
 <br>Read the documentation on how to update firmware here.</a>
 
-### Relese Notes:
+### Relese Notes: 
 
 * fix GPS NMEA sentences sent through BLE
 
