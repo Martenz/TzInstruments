@@ -8,7 +8,7 @@ image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAkcD4qdkgi5pWEGEi
 
 ### Download firmware (v1.0.1)
 
-2. <a href="{{site.baseurl}}/firmware/firmware_v101_esp32dev.bin" download>FIRMWARE.bin</a>
+<a href="{{site.baseurl}}/firmware/firmware_v101_esp32dev.bin" download>FIRMWARE.bin</a>
 
 
 Download each file and upload it from the Wifi web interface. 
