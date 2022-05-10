@@ -10,7 +10,7 @@ image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAkcD4qdkgi5pWEGEi
 
 <a href="{{site.baseurl}}/firmware/spiffs_v101_1.bin" download>spiffs_v101_1.bin</a>
 
-<h2>Note!!!<h2>
+<h2>Note!!!</h2>
 
 * Upload this file only if you are running latest v 1.0.1 of TzI firmware 
 * Upload this file from Update page in wifi interface, settings wil be reset to default factory.
@@ -21,7 +21,7 @@ image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAkcD4qdkgi5pWEGEi
     3. press and hold 3 seconds Page button to enable WiFi
     4. Go to Settings page in Wifi interface 192.168.4.1
     5. change display verison and restart
-    
+
 <a href="{{site.baseurl}}/howto#wifi-update-firmware"> 
 <br>Read the documentation on how to update firmware here.</a>
 
