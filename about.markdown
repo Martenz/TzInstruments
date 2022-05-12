@@ -17,6 +17,8 @@ Read how it works <a href="{{site.baseurl}}/howto">here</a>
 
 And download firmware updates from the Post in the <a href="{{site.baseurl}}/">main page</a>
 
+For comments/questions/problems refer to GitHub Issues <a href="https://github.com/Martenz/TzInstruments/issues" target="_blank">here</a>
+
 ![image-title-here]({{site.baseurl}}/images/tenz.png){:class="img-round img-w50"}
 {: style="color:gray; font-size: 80%; text-align: center;"}
 

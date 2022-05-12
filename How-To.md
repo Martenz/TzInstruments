@@ -18,6 +18,8 @@ permalink: /howto/
         * <a href="#wifi-vario-curve">Vario Curve</a>
     * <a href="#wifi-track-logs">Track logs</a>
     * <a href="#wifi-update-firmware">Update firmware</a>
+* <a href="#troubleshooting">Troubleshooting</a>
+    * <a href="#flashing-firmware">Flashing Firmware</a>
 
 <hr>
 
@@ -274,3 +276,56 @@ In this page you can update the firmware of the device to latest available that 
 
 Once downloaded both SPIFFS and FIRMWARE binaries files, upload them separately form the interface. To perform a complete update you will need to upload both.
 SPIFFS file will not force a restart of the device while FIRMWARE after uploaded will restart autmatically the device to apply changes. If not restart manually the device but only once the upload ended (you will see a blank page with a message confirming that upload is finished).
+
+
+## Troubleshooting
+
+### Flashing Firmware
+
+Main Firmware and Data can be flashed from the wifi interface as explained above but if something goes wrong in the process and your device gets stucked and stop working properly or does not power on after updates, it is possible to reset the device flashing firmware with USB connection.
+Here below the steps required to perform a complete refresh of the device connecting it to your PC/Mac/Linux.
+
+Requirements:
+
+* <a href="https://www.python.org/downloads/" target="_blank">pyhton 3.x installed</a>
+* <a href="https://pypi.org/project/esptool/" target="_blank">python esptool library</a>
+* usb data cable
+
+1) create a folder and download there both FIRMWARE and SPIFF files from main releases
+
+2) Create a virtual environment to install esptool locally in this folder
+
+    2.1) from created folder use this python command:
+
+        ``` python3 -m venv venv ```
+    
+        this will create a folder "venv"
+    2.2) enable local virtual environment
+
+        Mac/Linux
+
+        ``` source venv/bin/activate ```
+
+        Windows
+
+        ``` venv/Scripts/activate.bat ```
+
+    Folder structure should look like this now:
+
+    /newfolder
+        - /venv
+        - firmware_vXXX_BOARD.bin
+        - spiffs_vXXX.bin
+
+3) Flashing firmware commands:
+
+    Finally to flash firmware connect your device with USB cable, set switch the power button ON and run these commands from your terminal inside created folder and virtual environment enabled.
+    Change Firmware and Spiffs version to current latest release.
+
+    **FLASHING FIRMWARE and SPIFFS**
+
+    esptool.py --before default_reset --after hard_reset write_flash 0x10000 firmware_vXXX_BOARD.bin 0x3D0000 spiffs_vXXX.bin
+
+    **FLASHING only SPIFFS**
+
+    esptool.py --before default_reset --after hard_reset write_flash 0x3D0000 spiffs_vXXX.bin
