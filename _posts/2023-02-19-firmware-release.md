@@ -8,7 +8,7 @@ image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAkcD4qdkgi5pWEGEi
 
 ### Download firmware (v1.0.1)
 
-<a href="{{site.baseurl}}/firmware/firmware_v102_Edisplay.bin" download>firmware_v101_Edisplay.bin</a>
+<a href="{{site.baseurl}}/firmware/firmware_v102_Edisplay.bin" download>firmware_v102_Edisplay.bin</a>
 
 <a href="{{site.baseurl}}/firmware/spiffs_v102.bin" download>spiffs_v102.bin</a>
 
