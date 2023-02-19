@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "TzI Firmware Release v 1.0.1"
+title:  "TzI Firmware Release v 1.0.2"
 date:   2023-02-19 09:00:00 +0100
 categories: jekyll update
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAkcD4qdkgi5pWEGEiI-BPa43-yBR7bkwLQ&usqp=CAU
