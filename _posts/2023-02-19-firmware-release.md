@@ -6,7 +6,7 @@ categories: jekyll update
 image: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqAkcD4qdkgi5pWEGEiI-BPa43-yBR7bkwLQ&usqp=CAU
 ---
 
-### Download firmware (v1.0.1)
+### Download firmware (v1.0.2)
 
 <a href="{{site.baseurl}}/firmware/firmware_v102_Edisplay.bin" download>firmware_v102_Edisplay.bin</a>
 
