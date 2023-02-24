@@ -126,5 +126,13 @@ kbd {
 }
 
 .btn-download{
-  background-color:#83d322;
+  background-color: #83d322;
+  color: #007111;
+  padding: 0.5rem;
+  font-weight: bolder;
+}
+
+.btn-download:hover{
+  background-color: #007111;
+  color:#83d322
 }
