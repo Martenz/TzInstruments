@@ -3,7 +3,7 @@ layout: post
 title:  "TzI and TzIGx firmware 2.0.0"
 date:   2023-02-24 09:00:00 +0100
 categories: jekyll update
-image: {{site.baseurl}}/images/foto/howto/img_01.png
+image: ./images/foto/howto/TzIGx.jpg
 ---
 
 # TzI and TzI firmware available
