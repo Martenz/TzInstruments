@@ -9,7 +9,7 @@ list_title: Updates
 TzInstruments testing homemade instruments to fly better!
 {: style="text-align: center;"}
 
-![image-title-here]({{site.baseurl}}/images/tzi.png){:class="img-round"}
+![image-title-here]({{site.baseurl}}/images/foto/TzIGx.jpg){:class="img-round"}
 
 Check this page for new releases and updates.
 {: style="text-align: center;"}
