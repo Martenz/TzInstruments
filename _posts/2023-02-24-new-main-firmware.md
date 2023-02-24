@@ -19,7 +19,6 @@ Download Shared SETTINGS SPIFF DOWNLOAD: <a href="{{site.baseurl}}/firmware/spif
 
 
 Download
- 
 <a href="{{site.baseurl}}/firmware/firmware_v200_TzI.bin" download><button class="btn btn-download">Main firmware v.2.0.0</button></a>
 
 ### TzIGx: the extension of TzI with GxAir serial data for FANET+ data RX/TX
