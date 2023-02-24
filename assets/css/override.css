@@ -119,3 +119,12 @@ kbd {
 .goog-te-combo{
   border-radius:10px;
 }
+
+.btn{
+  border-radius:3px;
+  border:0px solid white;
+}
+
+.btn-download{
+  background-color:#83d322;
+}
