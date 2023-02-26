@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How To
+title: HowTo - Doc
 permalink: /howto/
 ---
 
