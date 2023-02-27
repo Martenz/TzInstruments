@@ -7,11 +7,12 @@ permalink: /howto/
 # Tz GPS Vario Manual Quick How To
 
 * <a href="#power-on">Power On</a>
-* <a href="#power-off">Power Off</a>
+* <a href="#sleep-mode">Power Off</a>
 * <a href="#battery-management">Battery Management</a>
 * <a href="#pages">Pages</a>
 * <a href="#speaker-volume">Speaker Volume</a>
 * <a href="#sd-card">SD Card</a>
+* <a href="#gpsdump">GpsDump</a>
 * <a href="#wifi-configurator">Wifi Configurator</a>
     * <a href="#wifi-data">Data</a>
     * <a href="#wifi-settings">Settings</a>
@@ -23,31 +24,39 @@ permalink: /howto/
 
 <hr>
 
-## Power On
+## Power On/Off
 
-Switch on the left side: Up TzI on. 
+Switch on the left side (latest cases have the I/O printed on front):
+
+* Up is on
+* Down is Off
+
+Don't rely on Epaper image because when shut down it will keep the last image displayed until you switch on again the device.
+
+Eg. TzI on/off
 
 ![image-title-here]({{site.baseurl}}/images/foto/howto/img_01.png){:class="img-round img-thmb"}
 ![image-title-here]({{site.baseurl}}/images/foto/howto/img_02.png){:class="img-round img-thmb"}
 
 <hr>
 
-## Power Off
+## Sleep Mode
 
-Switch on the left side: Down TzI off. 
-This switch will shut down completely the device, battery is not connected when off and eink display will freeze the current page.
+You can enter in deep sleep while pressing the third button (Page button) for more than 5 seconds.
 
-A proper way to shut down would be 
+Sleep Mode can be used to keep the device listening to satellites, when needed you can press
 
-1. go to the first page
-2. hold the page button (3rd button from the left O ) for more than 3 seconds to go into sleep mode
-3. use the switch to shut down completely and preserve battery
+* the page button
+* the reset button 
+* switch up and down 
+
+to restart the device with gps already fixed.
 
 ![image-title-here]({{site.baseurl}}/images/foto/howto/img_03.png){:class="img-round img-thmb"}
 
-
-<b>Note:</b>
-Sleep Mode can be used to keep the device listening to satellites, when needed press the reset button to start again the instrument or do a switch up and down to restart with gps in hot reset.
+Note: this will comsume less battery but still if you forget it like that you might ruin the battery life.
+Use it only for short period of time.
+The GPS can keep satellite constellation up to 30 minutes while off to restart and get a fix in few seconds.
 
 <hr>
 
@@ -55,16 +64,23 @@ Sleep Mode can be used to keep the device listening to satellites, when needed p
 
 I tested the instrument with Lipo 1s batteries 3.7v:
 
+TzI model:
+
 * 1000mA last 4/5 hours
 * 2000mA last 9/10 hours
+
+TzIGx model:
+
+* 1000mA last 2/3 hours
+* 2000mA last 5/7 hours
 
 Charge should be done with 5v charger and low mA input with micro-USB plug. 
 Any USB old charger eg. 500mA ( best option ) max 1A will work, <u>avoid to use USB fast chargers that can overheat the board</u>.
 
 ![image-title-here]({{site.baseurl}}/images/foto/howto/img_09.png){:class="img-round img-thmb"}
 
-Full charge with 2000mA battery takes around 3 hours, when fully charged the voltage should be 4.20/4.25 and an F will appear on top of the battery indicator in the status bar.
-Please check also temperature while charging, if you see on display values above 40 C degrees it might be you charger.
+Full charge with 2000mA battery takes around 3 hours, when fully charged the voltage should be 4.20/4.30.
+Please check also temperature while charging, if you see on display values above 45 C degrees try with a lower output charger.
 
 ## Pages
 
@@ -127,6 +143,59 @@ Arrow down once: volume -down
 
 SD card should be formatted as FAT32 before using it with TzI instruments.
 Insert SD card before switch on the device with pin connectors facing up as shown in the picture on the homepage.
+
+<hr>
+
+## GpsDump
+
+Export igc tracks to XContest. I meanly use this when something goes wrong with my track recorded on my tablet connected through BLE to the TZI or TzIGx. So I use the SD recorded IGC as backup.
+Here below how to load the igc track that you should have downloaded from the wifi web interface to your Android device where you should have also intalled <a href="https://play.google.com/store/apps/details?id=com.stein.sorensen&hl=it&gl=US" target="_blank">
+![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_app.png){:style="width:2rem;height:2rem;"}
+GpsDump application
+
+Here also the latest Microsoft application <a href="http://www.gpsdump.no/body_gpsdump5.htm" target="_blank">GPSDump</a> you can download and run from your desktop PC.
+Please use **Version 5.41** or later that include TzInstruments compatibility.
+
+**Windoows Export**
+
+1. Once downloaded run the **GpsDumpVVV.exe** 
+2. From **File** select **Process log from TzInstruments**
+
+    ![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_win.png){:class="img-thmb"}
+
+3. This will open a file browser to ask you the input TzI/TzIGx .igc file ypou should have donwloaded previously from the TzI/TzIGx web inteface
+
+4. Once loaded GpsDump will ask you to save the converted and verified .igc file to your desired location
+
+5. Finally open <a href="https://www.xcontest.org/world/en/" target="_blank">XContest</a> and load into your Flight Claim the converted .igc file
+
+
+**Android Export**
+
+1. Open GpsDump Application and click on first tab **TRK** and click on first button to set **GPS** input 
+
+    ![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_1.jpg){:class="img-thmb"}
+
+
+2. Then click on **READ** and select last option **TzInstruments** input
+
+    ![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_2.jpg){:class="img-thmb"}
+
+3. Select the IGC file you downloaded from TzI/TzIGx web interface onto your device
+
+    ![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_3.jpg){:class="img-thmb"}
+
+4. If the record has been saved correctly you then yous see a message like this with **(G-record OK)**
+
+    ![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_4.jpg){:class="img-thmb"}
+
+5. You can export directly to XContest with a click on **MISC** button and select **Send to XContest**
+
+    ![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_5.jpg){:class="img-thmb"}
+
+6. Here you can add more deatils and set your XContest acconut to upload the igc to your flight with then the **OK** button
+
+    ![image-title-here]({{site.baseurl}}/images/gpsdump/gpsdump_6.jpg){:class="img-thmb"}
 
 <hr>
 
