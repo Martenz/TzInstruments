@@ -3,7 +3,7 @@ layout: post
 title:  "TzI Beta firmware 2.2.0 - Thermal vario"
 date:   2023-03-16 09:00:00 +0100
 categories: jekyll update
-image: ./images/foto/TzIGx.jpg
+image: ./images/beta_v.png
 ---
 
 ## TzI Beta Thermal Vario Averagefirmware available with also SPIFFS update fix
